@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/player"
+            android:id="@+id/imageView" />
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/txtusr"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:id="@+id/txtmessa"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/txtusr"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/txtusr"
+            android:layout_alignStart="@+id/txtusr" />
+        <TextView
+            android:layout_width="100dp"
+            android:text="tanggal"
+            android:textAlignment="center"
+            android:id="@+id/txttgl"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtusr"
+            android:layout_alignRight="@+id/txtmessa"
+            android:layout_alignEnd="@+id/txtmessa" />
+    </RelativeLayout>
+
+    
+</android.support.v7.widget.CardView>
